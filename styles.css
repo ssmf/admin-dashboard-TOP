@@ -6,7 +6,7 @@ body, html {
 }
 
 * {
-    
+    margin: 0;
     font-family: 'Open Sans', 'Quicksand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
 }
 
@@ -26,14 +26,19 @@ body, html {
     flex-direction: column;
     gap: 10px;
     padding: 40px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .navbar {
+    width: 100%;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
     padding: 15px 50px;
-    width: 2000px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px -18px black;
+    position: relative;
 }
 
 .main {
@@ -97,16 +102,43 @@ body, html {
 }
 
 img {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     border-radius: 100%;
 }
 
 .small-img {
-    
+    height: 50px;
+    width: 50px;   
+}
+
+.navbar-bottom {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
 }
 
 .profile-name-small {
     font-size: 20px;
     margin: 0;
+}
+
+.cta {
+    background-color: #007aff;
+    padding: 10px 35px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
 }
