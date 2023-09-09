@@ -12,7 +12,7 @@ body, html {
 
 .section {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(800px, 4fr);
+    grid-template-columns: minmax(200px, .9fr) minmax(800px, 4fr);
     grid-template-rows: minmax(120px, .9fr) minmax(500px, 5fr);
     min-height: 100vh;
     min-width: 100vw;
